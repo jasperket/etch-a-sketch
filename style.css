@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle {
+    display: flex;
+    width: 50vh;
+    height: 6.25%;
+    align-content: stretch;
+}
+
+.square {
+    flex: auto;
+    border: 1px solid black;
+}
+
