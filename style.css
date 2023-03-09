@@ -13,7 +13,6 @@
 
 .rectangle {
     display: flex;
-    height: 6.25%;
     align-content: stretch;
 }
 
