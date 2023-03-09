@@ -7,17 +7,17 @@
     width: 50vh;
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+    border: 1px solid black;
 }
 
 .rectangle {
     display: flex;
-    width: 50vh;
     height: 6.25%;
     align-content: stretch;
 }
 
 .square {
     flex: auto;
-    border: 1px solid black;
 }
 
