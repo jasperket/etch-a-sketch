@@ -1,5 +1,22 @@
 * {
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGrid {
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 16px;
+    padding:8px;
 }
 
 #container {

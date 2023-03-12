@@ -1,3 +1,4 @@
+let blackness = 100;
 makeGrid(16);
 function makeGrid(side) {
     const container = document.querySelector('#container');
@@ -21,7 +22,13 @@ function makeGrid(side) {
     const squares = document.querySelectorAll('.square');
     squares.forEach(square => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'red';
+            if(blackness <= 0) {
+                blackness = 100;
+            }
+            const h = Math.floor((Math.random() * 255) +1);
+            const s = Math.floor((Math.random() * 100) +1);
+            square.style.backgroundColor = `hsl(${h} ${s}% ${blackness}%)`;
+            blackness -= 10;
         })
     })
 }
